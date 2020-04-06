@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Technology-BBC News</title>
+        <style type="text/css">
+        #top-bar {
+            width:1000px;
+            margin:auto;
+            height:40px;
+        }
+        body{
+            margin:0;
+            padding:0;
+            font-family:helvetica ,Arial, sans-serif;
+        }
+        #logo {
+            margin-top:5px;
+            width:96px;
+            float:left;
+            margin-right:0px;
+           
+        }
+        .topbar-section{
+            float: left;
+            border-left:1px #cccccc solid;
+            height:100%;
+
+        }
+        #signin-image{
+            width:30px;
+            margin:5px; 
+            float:left;
+
+        }
+        #signin-text{
+            font-weight: bold;
+            font-size: 90%;
+            position:relative;
+            top:14px;
+            
+
+        }
+        #wigglyline{
+            float:left;
+            height:40px;
+        }
+        #bell{
+            height:30px;
+            margin:9px 2px;
+        }
+        #bell_div{
+            float:left;
+        }
+        .topbar-menu{
+            font-weight:bold;
+            font-size:90%;
+            padding:13px 15px 0px 15px;
+            height:27px;
+        }
+        #more-arrow{
+            height:25px;
+            margin:0px;
+            float:right;
+
+        }
+        #search-box{
+            background-color:#E4E4E4;
+            border:none;
+            font-weight:bold;
+            font-size:14px;
+            padding:5px 0 7px 7px;
+            margin:7px;
+            float:left;
+        }
+        #search-logo{
+            width:29px;
+            margin:7px;
+
+        }
+        #menubar-container{
+            background-color:#BB1919;
+            width:100%;
+            height:70px;
+        }
+        #menu-bar{
+            width:100%;
+            margin:0 auto;
+
+        }
+
+        h1{
+            padding:0px;
+            margin:0px;
+            color:white;
+            float:left;
+            font-weight:normal;
+            font-size:40px;
+            position: relative;
+            top:12px;
+        } 
+        #findlocal-news{
+            width:160px;
+            float:right;
+            border:1px #BB4545 solid;
+            margin:5px 10px 0 0;
+            padding:1px 5px 7px 5px;
+            position: relative;
+            top:14px;
+        } 
+        #findlocal-news a {
+            text-decoration: none;
+            color:white;
+            font-size:20px;
+            position: relative;
+            top:-3px;
+
+        }  
+        #findlocal-news a:hover {
+            color:blue;
+            text-decoration: underline;
+             
+        }
+        #findlocal-news img{
+            height:25px;
+            position: relative;
+            top:7px;
+        }
+        #second-menubar-container{
+            background-color: #A91717;
+            width:100%;
+        }
+        #second-menubar{
+            width:1000px;
+            margin:0 auto;
+            height:35px;
+        }
+        #second-menubar a {
+            color:white;
+            text-decoration:none;
+            font-size:15px;
+            padding:0 10px;
+            border-right:1px #bb4545 solid;
+            position:relative;
+            top:5px;
+
+        }
+        #second-menubar a:hover{
+            text-decoration:underline;
+            color:blue;
+        }
+        .no-border{
+            border:none;
+        }
+        #down-arrow{
+            width:17px;
+            position:relative;
+            top:4px;
+
+        }
+        h2{
+            font-weight:normal;
+            margin-top:30px;
+            font-size:20px;
+            border-bottom:2px solid #A91717;
+            width:100px;
+        }
+        h3 a {
+            font-size:30px;
+            font-weight:bold;
+            color:black;
+            text-decoration:none;
+        }
+        h3 a:hover{
+            color:blue;
+            text-decoration:underline;
+        }
+        #article-summary{
+            color:#5a5a5a;
+            width:250px;
+            float:left;
+            font-size:20px;
+
+        }
+        .clock{
+            height:20px;
+            position:relative;
+            
+
+        }
+        #topic-link{
+            color:red;
+            text-decoration:none;
+        }
+        #article-summary a:hover{
+            color:blue;
+            text-decoration:underline;
+        }
+        .date{
+            padding-right:10px;
+            margin-top:1px;
+        }
+        #main-article-container{
+            width:880px;
+            float:left;
+            border-bottom: 1px #cccccc solid;
+        }      
+        #asda-image{
+            width:620px;
+            margin-left:5px;
+        }
+        #article-hr{
+            border-top:1px red solid;
+            width:30px;
+            padding-left:2px;
+        }
+        .hr-link{
+            color:black;
+            text-decoration:none;
+        }
+        #main-right{
+            font-weight:bold;
+            position:relative;
+            float:right;
+            border-left:1px #cccccc solid;
+        }
+        .article-images{
+            float:left;
+            width:90px;
+        }
+        .article-images-link{
+            height:80px;
+            color:black;
+            text-decoration:none;
+        }
+        #main-right a:hover{
+            color:blue;
+            text-decoration:underline;
+            font-size:18px;
+
+        }
+        p{
+            color:#5a5a5a;
+        }
+        .image-link{
+            text-decoration:none;
+            font-size:12px;
+        }
+        #twitter{
+            height:10px;
+            position:relative;
+            float:left;
+        }
+        #drone{
+            width:7px;
+            margin-left:20px;
+        }
+        #another{
+            padding-top:2px;
+            height:30px;
+            margin-left:650px;
+        }
+
+
+        
+       
+        </style>
+    </head>
+    <body>
+        <div id="top-bar">
+             <img id="logo" src="images/bbc-logo.png">
+           <div id="signin-div" class="topbar-section">
+               <img id="signin-image" src="images/sign-in.png">
+                <span id="signin-text">Sign in</span>
+            </div>
+         <div id="bell_div">
+              <img  id="wigglyline" src="images/wigglyline.png">
+              <img id="bell" src="images/bell.png"> 
+           </div>
+            <div class="topbar-section   topbar-menu">News</div>
+            <div class="topbar-section   topbar-menu">Sport</div>
+            <div class="topbar-section   topbar-menu">Weather</div>
+            <div class="topbar-section   topbar-menu">Iplayer</div>
+            <div class="topbar-section   topbar-menu">ITV</div>
+            <div class="topbar-section   topbar-menu">More
+                <img id="more-arrow" src="images/more-arrow.png">
+            </div>
+           <div class="topbar-section ">
+              <input id="search-box" type="text"  value="Search">
+                 <input type="image" id="search-logo" src="images/search.png">
+            </div>
+        </div>
+        <div>
+            <div id="menubar-container">
+               <div id="menu-bar">
+                  <h1>NEWS</h1>
+                  <div id="findlocal-news">
+                     <a href="">Find local news</a>
+                      <img src="images/pointer.png">
+                  </div>
+               </div>
+            </div>
+        </div>
+            <div id="second-menubar-container">
+                <div id="second-menubar">
+                    <a href=" ">Home</a>
+                    <a href=" ">UK</a>
+                    <a href=" ">World</a>
+                    <a href=" ">Business</a>
+                    <a href=" ">Politics</a>
+                    <a href=" ">Tech</a>
+                    <a href=" ">Science</a>
+                    <a href=" ">Health</a>
+                    <a href=" ">Education</a>
+                    <a href=" ">Entertainment & Arts</a>
+                    <a href=" ">Video & Audio</a>
+                    <a href=" "  class="no-border">More
+                        <img id="down-arrow" src="images/more-arrow.png">
+                    </a>
+
+                </div>
+            </div>
+        <div id="page-container">
+            <div id="main-article">
+                <h2>Technology</h2> 
+                <div id="main-article-container">
+                  <h3><a href="">Asda bug exposed payment details</a></h3>
+                    <div id="article-summary">
+                       <p>security vulnerabilities that put customers at risk have affected Asda's website for a  couple years, a security 
+                        expert has revealed.</p>
+                        <img class="clock" src="images/clock.png"><span class="date">19 january 2017</span> | <a id="topic-link" href="">Technology</a>
+                        <hr id="article-hr"  align="left">
+                        <a class="hr-link" href=" ">surveillance firm hit in hack attack</a>
+                        <a class="hr-link" href=" ">ebay flaw has existed for a month</a>   
+                       </div>
+                        <img id="asda-image" src="images/asda.jpg">
+                    </div>
+                       
+                </div>
+            </div>
+            <div id="main-right">
+                <h4>Watch/Listen</h4>
+                   <img class="article-images" src="images/article1.png">
+                   <a class="article-images-link" href="">UK Science chief backs blockchains</a>
+                   <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017</span> </p>
+                         <img class="article-images" src="images/article2.png">
+                         <a class="article-images-link" href="">Drone register gives "accountability"</a>
+                         <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017|</span><a class="image-link" href="">Technology</a> </p>
+                        
+                         <img class="article-images" src="images/article3.png">
+                         <a class="article-images-link" href="">SpaceX explode during landing</a>
+                         <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017|</span><a class="image-link" href="">Science & Environment</a></p>
+
+                         <img class="article-images" src="images/article4.png">
+                         <a class="article-images-link" href="">What is VPN services?</a>
+                         <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017|</span><a class="image-link" href="">Technology</a> </p>
+
+                         <img class="article-images" src="images/article5.png">
+                         <a class="article-images-link" href="">Charge your phone with a hand crank</a>
+                         <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017|</span><a class="image-link" href="">Technology</a> </p>
+
+                         <img class="article-images" src="images/article6.png">
+                         <a class="article-images-link" href="">Drone break guiness world record</a>
+                         <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017|</span><a class="image-link" href="">Technology</a> </p>
+
+                         <img class="article-images" src="images/article5.png">
+                         <a class="article-images-link" href="">Drone break guiness world record</a>
+                         <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017|</span><a class="image-link" href="">Technology</a> </p>
+
+                         <img class="article-images" src="images/article5.png">
+                         <a class="article-images-link" href="">Drone break guiness world record</a>
+                         <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017|</span><a class="image-link" href="">Technology</a> </p>
+
+                         <img class="article-images" src="images/article5.png">
+                         <a class="article-images-link" href="">Drone break guiness world record</a>
+                         <p><img class="clock" src="images/clock.png"><span class="date">19 january 2017|</span><a class="image-link" href="">Technology</a> </p>
+                         
+                         
+            </div>
+            <div id="third-div">
+                <div id="twitter">
+                    <img src="images/twitter.png">
+                    <p>twitter is crushing due to the unupdated <br>features,it is said that twitter is not updating <br>their feature to put every tweets.</p>
+
+                </div>
+                <div id="drones">
+                    <img src="images/drone.png">
+                </div>
+                <div id="another">
+                    <img src="images/flash.png">
+                    <p>regardless their worst battery, they are doing the best to improve<br>they have released Samsung S20</p>
+                </div>
+            </div>
+    
+        </div>
+       
+       
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
