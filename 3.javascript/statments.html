@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Javascript-statements</title>
+    </head>
+    <body>
+        <p>Guess the magic world!!</p>
+        <input type="text" id="MagicWorld">
+        <button id="magicbutton">Guess</button>
+        <p>Guess how many fingers am i holding up??</p>
+        <input type="text" id="Guess">
+        <button id="GuessButton">Guess</button>
+        <script>
+    
+            document.getElementById("magicbutton").onclick = function(){
+                var EnteredMagicWorld= document.getElementById("MagicWorld").value;
+                var MagicWorld= "Alackaday";
+                if(MagicWorld == EnteredMagicWorld){
+                    alert("You have made it");
+                }else{
+                    alert("you have missed!please try again");
+                }
+            
+            }
+            /*
+            document.getElementById("GuessButton").onclick = function(){
+
+                var randomNumber =Math.random();
+                randomNumber = randomNumber * 6; 
+                
+                randomNumber = Math.floor(randomNumber);
+
+             if (document.getElementById("Guess").value = randomNumber){
+                 alert("CONGRATULATIONS");
+
+            }else {
+                alert("ooops,SORRY! THE NUMBER WAS "  + randomNumber);
+            }
+        }*/
+
+
+        </script>
+    
+    </body>
+</html>

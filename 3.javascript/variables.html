@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Javascript-variables</title>
+    </head>
+    <body>
+        <p id="Paragraph">this is your input</p>
+        <input type="text" id="Input">
+        <button id="Pbutton">put text</button>
+        <script>
+            var name="eric";
+            alert(name)
+            document.getElementById("Pbutton").onclick = function() {
+                var textEntered ="";
+                textEntered =document.getElementById("Input").value;
+                document.getElementById("Paragraph").innerHTML = textEntered; 
+            }
+
+        </script>
+    </body>
+</html>

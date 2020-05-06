@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Jvascript-loops</title>
+    </head>
+    <body>
+        <div id="tweetDiv"></div>
+        <p>How many fingers are you holding up?</p>
+       <!-- <input type="text" id="Guess"> #### let's give the user option to choose to avoid wrong numbers-->
+       <select id="Guess">
+           <option>0</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+       </select>
+        <button id="GuessB">GuessMe!</button>
+
+        <script>
+            document.getElementById("GuessB").onclick = function(){
+                var myNumber = document.getElementById("Guess").value;
+                var gotIt= false;
+                var NumberofGuesses =1;
+                while(gotIt== false){
+                  var guess = Math.random();
+                     guess = guess *6;
+                     guess = Math.floor(guess);
+                      if (guess == myNumber){
+                         gotIt= true;
+                            alert("Got it!it was "+ guess + "it took me "+ NumberofGuesses + "guesses");
+
+                        }
+                      else{
+                        NumberofGuesses++;
+                       }
+                }
+
+            }
+        
+        
+        
+        
+        
+        
+        
+        
+        /*
+            var tweetString="";
+            var tweets =["i am not happy","because these guys want to kill us","by all means"];
+            var i = 0;
+            while(i<tweets.length){//reminding you that to use .length is when u are not sure of the total arrays.
+                tweetString= tweetString + "<p>" + tweets[i] + "</p>";
+                i++;
+            }
+            /*  this is for loop now after this we are going to see while loop
+            for (var i=0; i < 3; i++){
+                tweetString= tweetString + "<p>" + tweets[i] + "</p>";
+            }
+                document.getElementById("tweetDiv").innerHTML = tweetString;
+                */
+        </script>
+    </body>
+</html>
